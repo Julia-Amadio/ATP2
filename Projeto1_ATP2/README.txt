@@ -1,0 +1,1 @@
+A partir do arquivo venus2.pgm, o programa ProcessaImagem.c cria arquivos de limiarização, negativo e histograma da imagem.
