@@ -69,7 +69,7 @@ int main(){
         printf("[4] - Consultar estoque\n");
         printf("[5] - Consultar lucro\n");
         printf("[6] - Repor estoque\n");
-        printf("[0] - Sair\n"); //altera 
+        printf("[0] - Sair\n"); //altera os arquivos bin conforme modificacao
         printf("\nDigite a opcao desejada: ");
         scanf("%d", &opc);
 
