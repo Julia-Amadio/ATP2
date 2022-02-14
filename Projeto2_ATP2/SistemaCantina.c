@@ -354,7 +354,7 @@ void remover_prod_estoque(CHAVE* key, int* cont, INFS* info, int* prod_all, floa
     int aux1 = busca_binaria(prod, key, 0, m);
 
     if (aux1 < 0){
-        printf("\nERRO: Produto nao encontrado!");
+        printf("\nERRO: Produto nao encontrado! Voltando ao menu.");
         return;
     }
 
@@ -417,7 +417,7 @@ void repor_estoque(CHAVE* key, INFS* info, int cont){
     aux1 = busca_binaria(prod, key, 0, cont);
 
     if (aux1 < 0){
-        printf("\nERRO: Produto nao encontrado!");
+        printf("\nERRO: Produto nao encontrado! Voltando ao menu.");
         return;
     }
 
