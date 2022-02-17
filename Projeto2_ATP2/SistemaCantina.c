@@ -144,7 +144,7 @@ void inicio(CHAVE* key, INFS* info, int* cont, int* tam_infos){
     
     while(1){
         printf("\nInsira o nome do produto: ");
-        scanf("%s", key[i].nome);
+        scanf(" %[^\n]%*c", key[i].nome);
 
         for (int l = 0; l < strlen(key[i].nome); l++){
             key[i].nome[l]=toupper(key[i].nome[l]);
@@ -206,7 +206,7 @@ void venda_produto(CHAVE* key, int cont, INFS* info){
     prod = (char*) malloc (50*sizeof(char));
 
     printf("\nInsira o nome do produto: ");
-    scanf("%s", prod);
+    scanf(" %[^\n]%*c", prod);
 
     for (int i = 0; i < strlen(prod); i++){
         prod[i] = toupper(prod[i]);
@@ -250,7 +250,7 @@ void cadastro_novo_produto(CHAVE* key, INFS* info, int* cont, int* tam_infos){
 
     while(1){
         printf("\nInsira o nome do produto: ");
-        scanf("%s", prod);
+        scanf(" %[^\n]%*c", prod);
 
         for (int l = 0; l < strlen(prod); l++){
             prod[l]=toupper(prod[l]);
@@ -344,7 +344,7 @@ void remover_prod_estoque(CHAVE* key, int* cont, INFS* info, int* prod_all, floa
     prod = (char*) malloc (50*sizeof(char));
 
     printf("\nInsira o nome do produto a ser removido: ");
-    scanf("%s", prod);
+    scanf(" %[^\n]%*c", prod);
 
     for (int i = 0; i < strlen(prod); i++){
         prod[i] = toupper(prod[i]);
@@ -409,7 +409,7 @@ void repor_estoque(CHAVE* key, INFS* info, int cont){
     prod = (char*) malloc (50 * sizeof(char));
 
     printf("\nInsira o produto que deseja repor o estoque: ");
-    scanf("%s", prod);
+    scanf(" %[^\n]%*c", prod);
     for (int i = 0; i < strlen(prod); i++){
         prod[i] = toupper(prod[i]);
     }
